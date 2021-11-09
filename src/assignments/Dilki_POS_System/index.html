@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>POS_System</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assests/styles/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="naVBar">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a id="name" >
+                Dilki POS System
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!--<a id="homeBtn" class="nav-link active" aria-current="page" href="#">
+&lt;!&ndash;
+                            <img id="redDot" src="assests/img/kissclipart-red-dot-clipart-clip-art-cbaa486641b934f4.jpg">
+&ndash;&gt;
+                            <h8>Home</h8>
+                        </a>-->
+                    </li>
+
+                    <a id="manageCustomers" class="nav-link active" aria-current="page" href="#">
+                        Customers
+                    </a>
+
+                    <a id="manageProducts" class="nav-link active" aria-current="page" href="#">
+                        Products
+                    </a>
+                    <li class="nav-item">
+                        <a id="shopNow" class="nav-link" href="#">
+<!--
+                            <img id="cartIcon" src="assests/img/icons8-favorite-cart-24.png">
+-->
+                            Place Order
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--=================================================================-->
+<!--<section id="home">
+    <section id="carouselSection">
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="..." class="d-block w-100" src="assests/img/home6.png">
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="assests/img/home2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100"
+                     src="assests/img/home3.jpg">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </section>
+</section>-->
+<!--=================================================================-->
+<div id="customers">
+        <section class="container w-100 bg-white">
+            <section class="row bg-white">
+                <div id="sectionCustomer" class="col-5  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label for="txtCustId" class="col-form-label">Customer Id</label>
+                        </div>
+                        <div class="col-auto">
+                            <input  id="txtCustId" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label id="custId" class="col-form-label"></label>
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="txtName" class="col-form-label">Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input  id="txtName" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="txtAddress" class="col-form-label">Address</label>
+                        </div>
+                        <div  class="col-auto">
+                            <input id="txtAddress" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="txtSalary" class="col-form-label">Salary</label>
+                        </div>
+                        <div  class="col-auto">
+                            <input id="txtSalary" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="txtContact" class="col-form-label">Contact</label>
+                        </div>
+                        <div  class="col-auto">
+                            <input id="txtContact" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="btns container-fluid">
+                            <button id="btnAddCust" class="btn btn-success" type="button">Add</button>
+                            <button id="btnUpdate" class="btn btn-success" type="button">Update</button>
+                            <button id="btnDelete" class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div id="customerTable" class="col-7 bg-light">
+                    <table class="table table-hover">
+                        <thead class="bg-light ">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th> Name</th>
+                            <th>Address</th>
+                            <th>Salary</th>
+                            <th>Contact No</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="tblCustomers">
+<!--                        <tr>-->
+<!--                            <td>C001</td>-->
+<!--                            <td>Kasun</td>-->
+<!--                            <td>Galle</td>-->
+<!--                            <td>0115789654</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>C002</td>-->
+<!--                            <td>Dasun</td>-->
+<!--                            <td>Panadaura</td>-->
+<!--                            <td>0115789654</td>-->
+<!--                        </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </section>
+</div>
+<!--=================================================================-->
+<div id="products">
+        <section class="container w-100 bg-white">
+            <section class="row bg-white">
+                <div id="productSection" class="col-5  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Product Code</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="txtProductCode" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label id="lblProductCode"  class="col-form-label"></label>
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="txtProductDescription" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Qty</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="txtProductQty" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Unit Price</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="txtProductUnitPrice" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="btns container-fluid">
+                            <button id="btnAddProduct" class="btn btn-success " type="button">Add</button>
+                            <button id="btnUpdateProduct" class="btn btn-success" type="button">Update</button>
+                            <button id="btnDeleteProduct" class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="productTable" class="col-7 bg-light">
+                    <table class="table table-hover">
+                        <thead class="bg-light ">
+                        <tr>
+                            <th>Product Code</th>
+                            <th> Description</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="tblProducts">
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </section>
+</div>
+<!--=================================================================-->
+<div id="shops">
+
+<section class="containerShop w-100 bg-white">
+    <section class="row bg-white">
+        <div id="custSect" class="col-3 bg-white">
+            <form>
+                <label class="col-form-label"></label>
+                <div id="idOrder">
+                    <label id="lblOrderId" class="col-form-label">Qty</label>
+                    <label id="dots"  class="col-form-label">....................</label>
+
+                    <label id="lblDate"class="col-form-label">Qty</label>
+                </div>
+
+                <div class="col-autoLbl">
+                    <label class="col-form-label">Customer Id</label>
+<!--                </div>-->
+<!--                <div class="col-auto">-->
+                    <input id="txtCustomerId" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+
+                <div class="col-autoLbl">
+                    <label  class="col-form-label">Name</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtCustomerName" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+                <div class="col-autoLbl">
+                    <label  class="col-form-label">Address</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtCustomerAddress" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-autoLbl">
+                    <label  class="col-form-label">Contact No</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtCustomerContact" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            </form>
+        </div>
+
+
+        <div id="ProSect" class="col-3 bg-white">
+            <form>
+                <div class="col-autoLbl">
+                    <label class="col-form-label">Product Code</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtProCode" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+                <div class="col-autoLbl">
+                    <label  class="col-form-label">Description</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtProDescription" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+                <div class="col-autoLbl">
+                    <label class="col-form-label">QtyOnHand</label>
+                </div>
+                <div class="col-auto">
+                    <input id="txtProQty" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+                <div class="col-autoLbl">
+                    <label  class="col-form-label">Unit Price</label>
+                </div>
+                <div class="col-auto">
+                    <input  id="txtProUnitPrice" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+
+
+                </div>
+            </form>
+        </div>
+        <div class="addToCartBtn1 col-1 bg-white">
+            <label class="col-form-label">Qty :</label>
+            <input  id="txtQuantity" type="text"  width="50px" >
+            <label id="lblQtyWarning" class="col-form-label"></label>
+
+            <div id="btnAddItemToCart" >
+                <button class="addToCartBtn btn-success " type="button">Add Item</button>
+            </div>
+<!--            <div  >-->
+<!--                <button id="btnRemoveItemFromCart" class=" btn-danger " type="button">Remove Item</button>-->
+<!--            </div>-->
+        </div>
+
+        <div id="totalSection" class="col-Total col-3">
+            <form class="d-flex">
+                <input id="txtSearchOrder" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="btnSearchOrder" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div id="total">
+                <label  class="col-form-label">Total :</label>
+                <input id="lblTotal" type="text" class="qty" height="20px" aria-describedby="passwordHelpInline">
+            </div>
+
+            <div id="grandTot" >
+                <label  class="col-form-label">Grand Total :</label>
+                <input id="lblGrandTot" type="text" class="qty" height="20px" aria-describedby="passwordHelpInline">
+            </div>
+
+            <div id="discountDiv" >
+                <label  class="col-form-label">Discount :</label>
+                <input id="lblDiscount" type="text" class="qty" height="20px" aria-describedby="passwordHelpInline">
+
+            </div>
+            <div id="insufCash">
+                <label  class="col-form-label">Cash :</label>
+                <input id="lblCash" type="text" class="qty border" height="20px" aria-describedby="passwordHelpInline">
+
+            </div>
+
+            <div id="balance" >
+                <label  class="col-form-label">Balance :</label>
+                <input id="lblBalance" type="text" class="qty" height="20px" aria-describedby="passwordHelpInline">
+            </div>
+        </div>
+    </section>
+</section>
+
+   <!-- <div class="buy">
+        <button class="butCartBtn btn-success " type="button">Buy Cart</button>
+    </div>-->
+
+
+    <div class="col-12 bg-light">
+        <table class="table table-hover">
+            <thead class="bg-light ">
+            <tr>
+                <th>Product Code</th>
+                <th> Description</th>
+                <th> Unit Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+
+
+            </tr>
+            </thead>
+            <tbody id="tblOrders">
+<!--            <tr>-->
+<!--                <td>PQ001</td>-->
+<!--                <td>Keeri Samba 10kg</td>-->
+<!--                <td>450.00</td>-->
+<!--                <td>15</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>PQ002</td>-->
+<!--                <td>Vim Dishwash Bar</td>-->
+<!--                <td>120.00</td>-->
+<!--                <td>20</td>-->
+<!--            </tr>-->
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="controller/DashBoardController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="db/Database.js"></script>
+<script src="dto/CustomerDTO.js"></script>
+<script src="dto/ProductDTO.js"></script>
+<script src="controller/ProductController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="dto/OrderDTO.js"></script>
+</body>
+</html>

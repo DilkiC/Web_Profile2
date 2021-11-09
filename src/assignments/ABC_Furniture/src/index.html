@@ -1,0 +1,289 @@
+<!--
+  ~ /*
+  ~  * ................................................................
+  ~  *  Copyright (c) GDSE-55.year. All rights received.
+  ~  *  License under Sri Lankan informations.
+  ~  * .......................................................................
+  ~  *
+  ~  */
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC_Furniture</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!--header 1...........................................................................-->
+<header id="head1" class="head">
+    <img src="assets/images/logo.png" class="logo">
+    <ul>
+        <li><a href="#" id="homeBtn">HOME</a></li>
+        <li><a href="#" id="aboutBtn">ABOUT US</a></li>
+        <li><a href="#" id="contactBtn">CONTACT US</a></li>
+    </ul>
+</header>
+
+<!--header 2...........................................................................-->
+
+<div id="container">
+
+    <nav>
+        <div id="logo">ABC Furniture</div>
+        <ul>
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#" class="nav2">Products &nbsp;<i class="fa fa-caret-down"></i></a>
+                <div class="dd">
+                    <div id="up_arrow"></div>
+                    <ul>
+                        <li><a href="#" id="pro-display-btn" class="pro-sub">Beds</a></li>
+                        <li><a href="#" class="pro-sub">Tables</a></li>
+                        <li><a href="#" class="pro-sub">Steel Furniture</a></li>
+                        <li><a href="#" class="pro-sub">Dressing Table</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="dropdown"><a href="#" class="nav2">Living Room &nbsp<i class="fa fa-caret-down"></i> </a>
+                <div class="dd">
+                    <div id="u_a_c"><div ></div></div>
+                    <ul>
+
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Tables</a></li>
+                        <li><a href="#">Steel Furniture</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class="nav2">Bedroom &nbsp<i class="fa fa-caret-down"></i></a></li>
+            <li><a href="#" class="nav2">Dining &nbsp<i class="fa fa-caret-down"></i></a></li>
+            <!--<li id="off"><a href="#" class="nav2">Office Furniture</a></li>-->
+            <!--<li><a href="#">Plastic Products</a></li>-->
+
+        </ul>
+    </nav>
+    <!--hamberg nav list.............................................-->
+    <!--<div class="topnav">
+        <a href="#home" class="active">ABC Furniture</a>
+        &lt;!&ndash; Navigation links (hidden by default) &ndash;&gt;
+        <div id="myLinks">
+            <a href="#news" onmouseover="hover(this);" onmouseout="out(this);"><a href="#" class="nav2">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        &lt;!&ndash; "Hamburger menu" / "Bar icon" to toggle the navigation links &ndash;&gt;
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>-->
+</div>
+
+<!--home...........................................................................-->
+<div id="homeContent" class="content">
+    <div id="homeimg">
+        <img src="assets/images/istockphoto-1251694108-170667a.jpg" width="100%" height="100%">
+    </div>
+</div>
+
+<!--about...........................................................................-->
+<div id="aboutContent" class="content">
+    <div class="ab-sub-div1"><img src="assets/images/overview.jpg" width="100%" height="100%"></div>
+    <div class="ab-sub-div2">
+        <p class="pfont">ABC Furniture is among the world’s largest furniture manufacturers offering a diverse range of modern and traditional furniture.
+            Since ABC Furniture was established in 1986 it has achieved a rapid success and has expanded to over 241 showrooms globally.ABC Furniture’s success has grown from it’s ability to produce high quality furniture at affordable prices
+            with outstanding customer service.</p>
+
+            <p class="pfont">Please use the ‘Store Locator’ to find your nearest ABC Furniture showroom.
+            For further enquires please contact or visit any ABC Furniture showroom where our friendly staff will gladly assist you.</p>
+
+            <h5 id="cust">CUSTOMER CARE</h5>
+        <h5 class="desch6">033 4 678 678</h5>
+
+            <h5 class="desch6">customercare@abc.lk</h5>
+        <p></p>
+    </div>
+
+
+</div>
+
+<!--contact...........................................................................-->
+<div id="contactContent" class="content">
+    <div class="mainContent">
+        <div class="col1">
+            <div class="col11"></div>
+            <div class="col12">
+                <div class="col12-sub1">Name</div>
+                <div class="col12-sub"><input type="text>" class="inputs"></div>
+                <div class="col12-sub1">Email</div>
+                <div class="col12-sub"><input type="text>" class="inputs"></div>
+                <div class="col12-sub1">Subject</div>
+                <div class="col12-sub"><input type="text>" class="inputs"></div>
+                <div class="col12-sub1">Message</div>
+                <div class="col12-sub" id="messge-input"><input class="inputs" type="text" id="message"> </div>
+                <div class="col12-sub1"><button type="submit">Submit</button></div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="row1">
+                <div class="sub-r1">Phone</div>
+                <div class="sub-r1">Email</div>
+                <div class="sub-r1">Address</div>
+            </div>
+            <div class="row2">
+                <div class="sub-r2">0112 125 215</div>
+                <div class="sub-r2">info@gmail.com</div>
+                <div class="sub-r2">No 01,Main Street,Colombo 07.</div>
+            </div>
+            <div class="row3">
+                <img src="assets/images/map.png" width="100%" height="100%">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--product display page-beds......................................................-->
+<div class="content" id="pro-display-page">
+    <h1 class="title">Beds</h1>
+    <div class="mainDivPro">
+        <div class="procolpic">
+            <div class="prorow"><a href="#" id="pro-info-btn"><img src="assets/images/Beds/bed1.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href="#"><img src="assets/images/Beds/bed2.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href="#"><img src="assets/images/Beds/bed3.jpg" width="90%" height="90%"></a></div>
+        </div>
+        <div class="procolname">
+            <div class="prorow">A Bed</div>
+            <div class="prorow">B Bed</div>
+            <div class="prorow">C Bed</div>
+        </div>
+        <div class="procolprice">
+            <div class="prorow">Rs.38,000</div>
+            <div class="prorow">Rs.40,000</div>
+            <div class="prorow">Rs.45,000</div>
+        </div>
+        <div class="procolpic">
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed1.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed2.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed3.jpg" width="90%" height="90%"></a></div>
+        </div>
+        <div class="procolname">
+            <div class="prorow">F Bed</div>
+            <div class="prorow">G Bed</div>
+            <div class="prorow">H Bed</div>
+        </div>
+        <div class="procolprice">
+            <div class="prorow">Rs.35,000</div>
+            <div class="prorow">Rs.40,000</div>
+            <div class="prorow">Rs.50,000</div>
+        </div>
+        <div class="procolpic">
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed1.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed2.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed3.jpg" width="90%" height="90%"></a></div>
+        </div>
+        <div class="procolname">
+            <div class="prorow">F Bed</div>
+            <div class="prorow">G Bed</div>
+            <div class="prorow">H Bed</div>
+        </div>
+        <div class="procolprice">
+            <div class="prorow">Rs.35,000</div>
+            <div class="prorow">Rs.40,000</div>
+            <div class="prorow">Rs.50,000</div>
+        </div>
+
+        <div class="procolpic">
+            <div class="prorow"><a href=""><img src="assets/images/Beds/bed1.jpg" width="90%" height="90%"></a></div>
+            <div class="prorow"><a href=""></a></div>
+            <div class="prorow"><a href=""></a></div>
+        </div>
+        <div class="procolname">
+            <div class="prorow">F Bed</div>
+            <div class="prorow"></div>
+            <div class="prorow"></div>
+        </div>
+        <div class="procolprice">
+            <div class="prorow">Rs.35,000</div>
+            <div class="prorow"></div>
+            <div class="prorow"></div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<!--product information page-A bed -->
+<div class="content" id="pro-info-page">
+    <div class="pro-info-main">
+        <div class="pro-info-row1">
+            <div class="pro-info-row11">
+                <div class="pro-info-row11-col"><img src="assets/images/Beds/bed1.jpg" width="70%" height="90%"></div>
+                <div class="pro-info-row11-col"><img src="assets/images/Beds/bed1.jpg" width="70%" height="90%"></div>
+                <div class="pro-info-row11-col"><img src="assets/images/Beds/bed1.jpg" width="70%" height="90%"></div>
+                <div class="pro-info-row11-col"><img src="assets/images/Beds/bed1.jpg" width="70%" height="90%"></div>
+            </div>
+            <div class="pro-info-row12"><img src="assets/images/Beds/bed1.jpg" width="90%" height="100%"></div>
+            <div class="pro-info-row13">
+                <h4 class="pro-title">Felicia Storage Bed</h4>
+                <h5 class="pro-price">KBFL 007 / 78″ x 60″    Rs. 88,875</h5>
+
+                <h5 class="pro-price">KBFL 008 / 78″ x 72″    Rs. 100,175</h5>
+                <p class="para">Turn the unused space underneath your bed to a spacious storage while enjoying the aesthetics of the design. Precisely planned structure will ensure noise free peacefulness whereas the storage compartments will promise you a clutter free arrangement.</p>
+            </div>
+        </div>
+        <div class="pro-info-row2">
+            <h5 class="pro-price" id="war">Warranty</h5>
+            <p class="desch6">* 15 Year Warranty for bed</p>
+            <p class="desch6">* 1 Year Warranty for bed mechanism</p>
+            <p class="desch6">* Warranty Covers Only Manufacturing Defects.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--footer...........................................................................-->
+<footer id="footer">
+    <div class="mainDivPic">
+        <img class="icon" src="assets/images/phone.png" width="50%" height="90%">
+    </div>
+    <div class="mainDiv">Contact : 0112 125 215</div>
+    <div class="mainDivPic">
+        <img class="icon" src="assets/images/email.png" width="50%" height="90%">
+    </div>
+    <div class="mainDiv"> Email : info@gmail.com</div>
+
+
+</footer>
+
+
+
+
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<script src="assets/js/Dashboard.js"></script>
+
+</body>
+</html>

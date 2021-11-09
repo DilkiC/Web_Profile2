@@ -1,0 +1,660 @@
+*{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*dividing page..............................*/
+.page-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //border: 1px solid black;
+    background-color: #d7dede;
+
+}
+.content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //border: 1px solid black;
+    background-color: #d7dede;
+
+
+}
+/*.........................*/
+.content-row1{
+    width: 15%;
+    height: 50%;    //30
+    border: 1px solid #d7dede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #b7cdee;
+    //background-color: #ecb7bf;
+    position: sticky;
+    bottom: 30vh;
+
+}
+.content-row2{
+    width: 90%;
+    height: 100%;
+    border: 1px solid #d7dede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //background-color: #dcd3d3;
+    //background-color: white;
+
+    background-image: url("../images/white-right.jpg")   ;
+    background-size: cover;
+    //opacity: 0.5;
+
+}
+.content-row3{
+    width: 5%;
+    height: 25%;
+    //border: 1px solid #d7dede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //background-color: white;
+    position: sticky;
+    bottom: 40vh;
+}
+/*...................................*/
+.content-row1-col {
+    width: 100%;
+    height: calc(100%/7);
+    border: 1px solid #d7dede;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+    //font-family: Roboto;
+
+
+}
+
+.content-row3-col{
+    width: 100%;
+    height: calc(100%/5);
+    //border: 1px solid #999999;
+}
+.content-row3-col>img:hover{
+    width: 110%;
+    height: 110%;
+    cursor: pointer;
+}
+
+/*...............nav bar...............*/
+#pic-link{
+    background-color: #5a5757;
+
+}
+.content-row1-col:hover{
+    cursor: pointer;
+    //background-color: rgba(239, 205, 34, 0.93);
+    background-color: #c7bebe;!important;
+    background-position: left bottom;
+    //transition: all 2s ease;
+}
+.ab-link-desc{
+    color: #999999;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+
+/*...................about me.......................*/
+.ab-link{
+    font-weight:bold;
+    font-size: 15px;
+
+}
+.ab-link1{
+    font-weight:bold;
+    font-size: 15px;
+    color: blue;
+
+}
+.ab-name1{
+
+    margin-bottom: 1vh;
+//font-family: "Roboto Slab","Helvetica","Arial",sans-serif;
+    font-family: sans-serif;
+    font-size: 55px;
+    color: #1f1f1f;
+
+}
+.ab-name2{
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.back-image{
+    width: 12vw;
+    height: 20vh;
+    opacity: 0.5;
+    position: relative;
+    left: 30vw;
+    top: 0;
+    background-color: #999999;
+    border: 3px solid black;
+}
+.ab-sub-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //border: 1px solid red;
+}
+.ab-design{
+    margin-top: 15vh;
+    width: 20px;
+    height: 8px;
+    background-color: #7282ee;
+}
+.ab-design1{
+    margin-top: 10vh;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #7282ee;
+}
+.ab-design2{
+    margin-top: 1vh;
+    width: 1px;
+    height: 30vh;
+    background-color: #999999;
+}
+.ab-design22{
+    margin-top: 1vh;
+    width: 1px;
+    height: 40vh;
+    background-color: #999999;
+}
+#ab-desi{
+    margin-top: 1vh;
+}
+#ab-desi1{
+    margin-top: 1vh;
+}
+.last-div{
+    width: 100%;
+    height: 20vh;
+    //background-color: white;
+    background-image: url("../images/white-right.jpg")   ;
+    background-size: cover;
+}
+.ab-info-div{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    //border: 1px solid black;
+}
+.ab-info-subdiv1{
+    width: 45%;
+    height: 100%;
+    //border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.ab-info-subdiv2{
+    width: 10%;
+    height: 100%;
+    //border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ab-info-subdiv3{
+    width: 45%;
+    height: 100%;
+    //border: 1px solid black;
+    display: flex;
+    //align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    color: #999999;
+    font-weight: bold;
+}
+.ab-info{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: inherit;
+}
+.ab-infoi{
+    margin: 16px;
+    font-size: 15px;
+    font-weight: inherit;
+}
+.ab-info0{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: inherit;
+}
+.ab-info1{
+    margin: 15px;
+    font-size: 15px;
+    font-weight: inherit;
+}
+/*..............skills............................*/
+
+.ski-pro{
+    width: 80%;
+    height: 30vh;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.ski-pro-info{
+    width:calc(100%/2) ;
+    height: 100%;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+.ski-info-sub1{
+    width:30% ;
+    height: 100%;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+}
+.ski-info-sub2{
+    width:70% ;
+    height: 100%;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+}
+.ski-line{
+    width:100% ;
+    height: calc(100%/6);
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    //flex-direction: column;
+}
+.main-line{
+    width: 90%;
+    height: 1vh;
+    background-color: #999999;
+    border-radius: 10px;
+}
+
+.java-line{width: 90%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.css-line{width: 85%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.js-line{width: 80%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.rn-line{width: 80%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.exx-line{width: 60%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.flutter-line{width: 30%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.sin-line{width: 98%;height: 1vh;background-color: #767373;border-radius: 10px;}
+.eng-line{width: 70%;height: 1vh;background-color: #767373;border-radius: 10px;}
+
+.ski-it{
+    width: 60%;
+    height: 20vh;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.ski-it-info{
+    width:calc(100%/2) ;
+    height: 100%;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.it-info{
+    width: 100%;
+    height: calc(100%/3);
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.it-info1{
+    width: 70%;
+    height: calc(100%/3);
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+
+
+/*.............................works................................*/
+.work-main{
+    width: 60%;
+    height: 50vh;
+    //border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.work-assi{
+    width: calc(100%/3);
+    height: 100%;
+    //border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.work-assi-info{
+    width: 100%;
+    height: calc(100%/6);
+    border-bottom: 1px solid #999999;
+    //background-color: #d2caca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //flex-direction: column;
+}
+.view_btn{
+    transition: transform 0.25s ease;
+    background-color: #999999;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.view_btn:hover{
+    transition: transform 0.25s ease;
+    font-size: 15px;
+    cursor: pointer;
+}
+.view_btn-pop:hover{
+    transition: transform 0.25s ease;
+    font-size: 15px;
+    cursor: pointer;
+}
+.view_btn-pop{
+    transition: transform 0.25s ease;
+    background-color: #999999;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 23px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close,.closePro {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closePro:hover,
+.closePro:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pop-main{
+    width:70% ;height: 90%;
+    display: flex; justify-content: center; align-items: center;flex-direction: row;
+    //border: 1px solid crimson;
+
+}
+.pop-row{
+    width: calc(100%/3);height: 100%;//border-bottom: 1px solid #999999;
+    display: flex; justify-content: center; align-items: center;flex-direction: column;
+}
+.pop-col{
+    width: 100%;height: calc(100%/4);border-bottom: 1px solid #999999;
+    display: flex; justify-content: center; align-items: center;flex-direction: column;
+}
+
+/*........................contact.....................*/
+.con-form{
+    margin-top: 5vh;
+    width: 60%;
+    height: 90vh;
+    background-color: #e5dbdb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-add{
+    width: 50%;
+    height: 30px;
+    border: none;
+}
+.messge{
+    width: 50%;
+    height: 30px;
+    border: none;
+}
+.btn-send{
+    //margin-top: 5vh;
+    width: 30%;
+    height: 5%;
+    margin-top: 20px;
+    //background-color: #e5dbdb;
+    background-color: white;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+.btn-send:hover{
+    width: 40%;
+    height: 10%;
+}
+.con-media{
+    width: 80%;
+    height: 30%;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20vh;
+}
+.con-links{
+    width: calc(100%/5);
+    height: 100%;
+    //border: 1px solid red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border-radius: 100%;
+}
+.con-links>img{
+    border-radius: 100%;
+}
+
+/*.....................hobby.......................*/
+.hobby-poem{
+    width: 90%;
+    //border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poem1{
+    width: 25%;
+    //border: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.poem2{
+    width: 50%;
+    //border: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    //border-right: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.poem3{
+    width: 25%;
+    //border: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-left: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+/*...................portfolio........................*/
+.port-pic{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid #999999;
+    position: relative;
+    top: 10vh;
+
+}
+.port-pic1{
+    width: calc(100%/5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid #999999;
+}
+.port-pic2{
+    width: calc(100%/5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid #999999;
+    position: relative;
+    top: 10vh;
+
+}
+
+.last-div-port{
+
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    background-image: url("../images/white-right.jpg")   ;
+    background-size: cover;
+
+}
+.port-img:hover{
+    width: 200%;
+    height: 200%;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+    //z-index: 2000;
+}
+/*.port-img{
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}*/
+/*.port-img:active {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    cursor: zoom-out;
+}*/
+
+
+/*....................................responsive..........................*/
+@media all and (max-width: 320px){
+    body{
+        display: none;
+    }
+
+}
+@media all and (min-width: 320px) and (max-width: 375px) {
+    body{
+        display: none;
+    }
+
+}
+@media all and (min-width: 375px) and (max-width: 425px) {
+    body{
+        display: none;
+    }
+
+}
+@media all and (min-width: 425px) and (max-width: 768px) {
+    /*tab*/
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+
